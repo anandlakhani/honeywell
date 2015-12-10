@@ -8,7 +8,7 @@ end
 
 get '/' do
   "Hello World!"
-  
+  code = params[:code]
  
 end
 
