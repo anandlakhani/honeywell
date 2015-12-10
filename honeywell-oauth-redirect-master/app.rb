@@ -12,7 +12,7 @@ get '/' do
   
   auth = ENV['basic_auth']
   
-  response = RestClient.get 'http://www.rediff.com'
+  response = RestClient.get( 'http://www.rediff.com')
   response.code
  
 end
