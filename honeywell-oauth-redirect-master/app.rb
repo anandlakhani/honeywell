@@ -11,6 +11,9 @@ get '/' do
   code = params[:code]
   
   auth = ENV['basic_auth']
+  
+  response = RestClient.get 'http://www.rediff.com'
+  response.code
  
 end
 
