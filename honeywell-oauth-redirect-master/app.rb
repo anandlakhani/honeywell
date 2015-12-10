@@ -9,7 +9,6 @@ end
 
 begin
 
-  "Hello World!"
   code = params[:code]
   @auth = ENV['basic_auth']
   auth_get = 'grant_type=authorization_code&code=' + code + '&redirect_uri=' + ENV['redirect_uri']
