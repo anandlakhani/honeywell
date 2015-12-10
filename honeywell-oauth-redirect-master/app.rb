@@ -9,6 +9,8 @@ end
 get '/' do
   "Hello World!"
   code = params[:code]
+  
+  auth = ENV['basic_auth']
  
 end
 
