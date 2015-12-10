@@ -2,6 +2,11 @@ require 'sinatra'
 require 'rest-client'
 require 'json'
 
+configure :development do
+  set :bind, '0.0.0.0'   
+  set :port, 3000
+end
+
 
  
 before do
