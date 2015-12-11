@@ -3,8 +3,8 @@ require 'sinatra'
 require 'json'
 
 get '/' do
+  response = RestClient::Request.execute method: :post, url: 'https://www.google.com/'
   
-  response = RestClient::Request.execute method: :post, url: 'https://qtccna.honeywell.com/sandbox/Auth/OAuth/token'
   response
 end
 
