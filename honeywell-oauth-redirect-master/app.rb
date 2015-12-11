@@ -3,6 +3,6 @@ require 'sinatra'
 require 'json'
 
 get '/' do
-   'Hello World !'
+  response = 'Hello World !'
 end
 
