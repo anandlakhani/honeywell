@@ -1,11 +1,7 @@
 require 'sinatra'
 require 'rest-client'
 require 'json'
-configure :development do
-  set :bind, '0.0.0.0'   
-  set :port, 3000
-  config_file './config.yml'
-end
+
 before do
 	content_type 'application/json'
 end
