@@ -3,6 +3,6 @@ require 'sinatra'
 require 'json'
 
 get '/' do
-  puts 'Hello World !'
+   'Hello World !'
 end
 
