@@ -14,8 +14,7 @@ get '/redirect' do
   code = params[:code]
   @auth = ENV['basic_auth']
   auth_get = 'grant_type=authorization_code&code=' + code + '&redirect_uri=' + ENV['redirect_uri']
-  response = RestClient.get('http://www.rediff.com')
-  response.code
+  
  
 rescue => e
     "ERROR: #{e}"
