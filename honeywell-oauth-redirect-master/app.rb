@@ -4,5 +4,6 @@ require 'json'
 
 get '/' do
   response = 'Hello World !'
+  response
 end
 
