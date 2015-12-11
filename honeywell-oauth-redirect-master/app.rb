@@ -4,4 +4,4 @@ require 'json'
 
 res=RestClient.post 'http://www.rediff.com', :content_type => :json, :accept => :json
 result = JSON.parse(res)
-return result.to_json
+result.to_json
