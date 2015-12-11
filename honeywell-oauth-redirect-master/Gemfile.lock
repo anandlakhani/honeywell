@@ -31,3 +31,4 @@ DEPENDENCIES
   json
   rest-client
   sinatra
+  rest-client-logger
