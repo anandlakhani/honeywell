@@ -16,7 +16,7 @@ get '/redirect' do
   auth_get = 'grant_type=authorization_code&code=' + code + '&redirect_uri=' + ENV['redirect_uri']
   response = RestClient.get('http://www.rediff.com')
   response.code
-  ## "#{response.to_str}"
+ 
 rescue => e
     "ERROR: #{e}"
  end 
