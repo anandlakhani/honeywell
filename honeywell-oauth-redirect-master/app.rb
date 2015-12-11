@@ -3,7 +3,7 @@ require 'sinatra'
 require 'json'
 
 begin
-  RestClient.get 'http://rediff.com'
+  'Hello World !'
 rescue => e
   e.response
 end
