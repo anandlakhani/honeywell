@@ -2,7 +2,7 @@ require 'rest-client'
 require 'sinatra'
 require 'json'
 
-get '/' do
+get '/redirect' do
   response = RestClient::Request.execute method: :get, url: 'https://www.google.com/'
   
   response
