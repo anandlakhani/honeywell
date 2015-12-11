@@ -3,8 +3,7 @@ require 'sinatra'
 require 'json'
 
 begin
-  'Hello World !'
-rescue => e
-  e.response
+  puts 'Hello World !'
+
 end
 
