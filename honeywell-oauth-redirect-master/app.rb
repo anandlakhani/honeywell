@@ -4,8 +4,7 @@ require 'json'
 
 get '/' do
   
-  
-  response = RestClient::Request.execute method: :get, url: 'http://www.rediff.com'
+  response = RestClient::Request.execute method: :post, url: 'http://www.rediff.com'
   response
 end
 
