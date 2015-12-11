@@ -2,8 +2,7 @@ require 'rest-client'
 require 'sinatra'
 require 'json'
 
-begin
+get '/' do
   puts 'Hello World !'
-
 end
 
