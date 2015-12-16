@@ -8,7 +8,7 @@ end
 
 get '/redirect' do
   code = params[:code]
-  @auth = 'BasicM2VhOTMxMWItNTYxMy00ZjBlLWE1MTQtZWVjNTkxMTg4N2ZhOjNkMzcxZGIzLTY0YWItNDg2YS1hNDcxLWQ3N2ViYjZlMzBhZQ=='
+  @auth = ENV['basic_auth']
   auth_get = 'grant_type=authorization_code&code=' + code + '&redirect_uri=' + ENV['redirect_uri']
   response = RestClient.post('https://qtccna.honeywell.com/sandbox/Auth/OAuth/token', auth_get, {:authorization => @auth, :accept => 'json', :content_type => 'application/x-www-form-urlencoded'})
   response = JSON.parse(response)
