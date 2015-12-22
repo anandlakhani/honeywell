@@ -15,6 +15,6 @@ get '/redirect' do
   response = JSON.parse(response)
   response = response.fetch("access_token")
   uri = ("honeywelltestapp://url?token="+ response)
-  
+  redirect (uri)
 end
 
